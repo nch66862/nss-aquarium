@@ -1,0 +1,69 @@
+@import "./fish.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./locations.css";
+@import "./quotes.css";
+@import "./tips.css";
+
+
+/* Styling for the entire website */
+body {
+    margin: 0;
+    background-color: #18A558;
+}
+
+/* styling for the elements */
+h1 {
+    align-self: center;
+    margin: 10px;
+    color: seashell;
+}
+
+nav {
+    padding: 0 10px;
+}
+
+a {
+    padding: 0 10px;
+}
+
+/* styling for the header */
+header {
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 5px solid black;
+    background-color: #21B6A8;
+}
+
+.headerLogo {
+    height: 100%;
+    flex-basis: 20%;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.headerNavigation {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* styling for the content container */
+.contentContainer {
+    display: flex;
+}
+
+.containerLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentArticle {
+    display: flex;
+    flex-basis: 66%;
+}
