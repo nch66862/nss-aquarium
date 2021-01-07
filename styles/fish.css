@@ -1,3 +1,31 @@
 .fishCard__img {
-    width: 25%;
+    flex: 1 1 auto;
+    width: 90%;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.fishCard {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    flex: 0 1 210px;
+    background-color: #21B6A8;
+    border-radius: 3px;
+}
+
+.fishCard__name {
+    align-self: center;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+
+@media (max-width: 465px) {
+    .containterLeft__fishList {
+        display: flex;
+        align-items: center;
+    }
 }

@@ -1,0 +1,55 @@
+/* styling for the header */
+@media (min-width: 480px) {
+    header {
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 5px solid black;
+        background-color: black;
+    }
+    
+    .headerLogo {
+        height: 100%;
+        flex-basis: 20%;
+    }
+    
+    .headerText {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-content: flex-end;
+    }
+    
+    .headerNavigation {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 479px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        min-width: 221px;
+    }
+    
+    .headerLogo {
+        width: 100%;
+        flex-basis: 20%;
+    }
+    
+    .headerText {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 5px solid black;
+        background-color: #21B6A8;
+    }
+    
+    .headerNavigation {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+

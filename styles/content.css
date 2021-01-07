@@ -1,0 +1,26 @@
+/* styling for the content container */
+
+@media (min-width: 480px) {
+    .contentContainer {
+        display: flex;
+        /* flex-wrap: wrap; */
+    }    
+}
+
+.containerLeft {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.containerRight {
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+}
+
+.contentArticle {
+    display: flex;
+    flex-wrap: wrap;
+}
