@@ -27,6 +27,8 @@ nav {
 a {
     padding: 10px 10px;
     color: darkorange;
+    /* I do not want the hyperlink to wrap and spill out of the header */
+    /* width: 140px; */
 }
 
 p {
@@ -37,6 +39,23 @@ h2 {
     margin: 10px 10px;
 }
 
-h3 {
-    help me
+ul {
+    margin: 0;
+}
+
+.dashed {
+    list-style-type: none;
+}
+
+.dashed > li {
+    text-indent: -5px;
+}
+
+.dashed > li::before {
+    content: "- ";
+    text-indent: -5px;
+}
+
+li {
+    margin: 0;
 }

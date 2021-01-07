@@ -1,0 +1,30 @@
+.containerLeft__travelLocations {
+
+}
+
+.locationCard {
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px black solid;
+    flex: 0 1 210px;
+    background-color: #21B6A8;
+    border-radius: 3px;
+}
+
+.locationCard__city {
+    
+}
+.locationCard__country {
+
+}
+.locationCard__waterBody {
+
+}
+.locationCard__img {
+    flex: 1 1 auto;
+    width: 90%;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10%;
+}

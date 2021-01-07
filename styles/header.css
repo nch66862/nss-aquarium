@@ -1,7 +1,7 @@
 /* styling for the header */
 @media (min-width: 480px) {
     header {
-        height: 80px;
+        height: 120px;
         display: flex;
         flex-wrap: wrap;
         border-bottom: 5px solid black;
@@ -10,7 +10,7 @@
     
     .headerLogo {
         height: 100%;
-        flex-basis: 20%;
+        /* flex-basis: 20%; */
     }
     
     .headerText {

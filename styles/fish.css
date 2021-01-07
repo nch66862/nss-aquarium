@@ -1,16 +1,9 @@
-.fishCard__img {
-    flex: 1 1 auto;
-    width: 90%;
-    align-self: center;
-    padding: 5px;
-    border-radius: 10%;
-}
 
 .fishCard {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px black solid;
+    border: 2px black solid;
     flex: 0 1 210px;
     background-color: #21B6A8;
     border-radius: 3px;
@@ -22,6 +15,25 @@
     font-size: 30px;
 }
 
+.fishCard__species {
+    font-style: italic;
+}
+.fishCard__location {
+    
+}
+.fishCard__length {
+    
+}
+.fishCard__diet {
+    
+}
+.fishCard__img {
+    flex: 1 1 auto;
+    width: 90%;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10%;
+}
 
 @media (max-width: 465px) {
     .containterLeft__fishList {
