@@ -1,6 +1,6 @@
 /* styling for the content container */
 
-@media (min-width: 480px) {
+@media (min-width: 655px) {
     .contentContainer {
         display: flex;
         /* flex-wrap: wrap; */
