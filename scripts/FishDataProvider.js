@@ -1,10 +1,14 @@
 const fishCollection = [
     {
         name: "Bart",
-        species:
-        location:
-        length:
-        diet:
-        food: "crustaceans"
+        species: "fish",
+        location: "",
+        length: "",
+        diet: "",
+        food: "crustaceans",
     }
 ]
+
+export const useFish = () => {
+    return fishCollection.slice()
+}
