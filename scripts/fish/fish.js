@@ -5,7 +5,7 @@ export const Fish = (fish) => {
             <p class="fishCard__species">Species: ${fish.species}</p>
             <p class="fishCard__location">Harvested: ${fish.location}</p>
             <p class="fishCard__length">Length: ${fish.length}</p>
-            <p class="fishCard__diet">Diet: ${fish.food}</p>
+            <p class="fishCard__diet">Diet: ${fish.diet}</p>
             <img  class="fishCard__img" src="${fish.image}" />
         </section>
     `
