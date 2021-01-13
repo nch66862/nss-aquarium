@@ -1,19 +1,19 @@
-import { useLocation } from './LocationDataProvider.js'
-import { Location } from "./Location.js"
+import { useTip } from './TipDataProvider.js'
+import { Tip } from "./Tip.js"
 
-export const LocationList = () => {
+export const TipList = () => {
 
     // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector(".containerLeft__travelLocations")
-    const locations = useLocation()
+    const contentElement = document.querySelector(".dashed")
+    const tips = useTip()
 
-    let travelHTMLRepresentations = ""
-    for (const location of locations) {
-        travelHTMLRepresentations+= Location(location)
+    let tipHTMLRepresentations = ""
+    for (const tip of tips) {
+        tipHTMLRepresentations+= Tip(tip)
     }
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
-            ${travelHTMLRepresentations}
+            ${tipHTMLRepresentations}
     `
 }

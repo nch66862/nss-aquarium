@@ -1,10 +1,10 @@
 export const Location = (location) => {
     return `
-        <section class="fishCard">
-            <p class="fish__name">${location.city}</p>
-            <p class="fish__species">${fish.country}</p>
-            <p class="fish__location">${fish.waterBody}</p>
-            <div><img  class="fishCard__img" src="${location.image}" /></div>
+        <section class="locationCard">
+            <p class="locationCard__city">${location.city}</p>
+            <p class="locationCard__country">${location.country}</p>
+            <p class="locationCard__waterBody">${location.waterBody}</p>
+            <div><img  class="locationCard__img" src="${location.image}" /></div>
         </section>
     `
 }
