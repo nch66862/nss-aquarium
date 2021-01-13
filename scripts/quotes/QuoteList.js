@@ -1,15 +1,15 @@
-import { useLocation } from './LocationDataProvider.js'
-import { Location } from "./Location.js"
+import { useQuote } from './QuoteDataProvider.js'
+import { Quote } from "./Quote.js"
 
-export const LocationList = () => {
+export const QuoteList = () => {
 
     // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector(".containerLeft__travelLocations")
-    const locations = useLocation()
+    const contentElement = document.querySelector(".containerLeft__travelQuotes")
+    const quotes = useQuote()
 
     let travelHTMLRepresentations = ""
-    for (const location of locations) {
-        travelHTMLRepresentations+= Location(location)
+    for (const quote of quotes) {
+        travelHTMLRepresentations+= Quote(quote)
     }
 
     // Add to the existing HTML in the content element
