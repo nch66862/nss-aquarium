@@ -1,19 +1,19 @@
-import { useTip } from './TipDataProvider.js'
-import { Tip } from "./Tip.js"
+// import { useTip } from './TipDataProvider.js'
+// import { Tip } from "./Tip.js"
 
-export const TipList = () => {
+// export const TipList = () => {
 
-    // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector(".dashed")
-    const tips = useTip()
+//     // Get a reference to the `<article class="content">` element
+//     const contentElement = document.querySelector(".dashed")
+//     const tips = useTip()
 
-    let tipHTMLRepresentations = ""
-    for (const tip of tips) {
-        tipHTMLRepresentations+= Tip(tip)
-    }
+//     let tipHTMLRepresentations = ""
+//     for (const tip of tips) {
+//         tipHTMLRepresentations+= Tip(tip)
+//     }
 
-    // Add to the existing HTML in the content element
-    contentElement.innerHTML += `
-            ${tipHTMLRepresentations}
-    `
-}
+//     // Add to the existing HTML in the content element
+//     contentElement.innerHTML += `
+//             ${tipHTMLRepresentations}
+//     `
+// }
