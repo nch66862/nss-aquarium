@@ -1,9 +1,9 @@
-// const tipCollection = [
-//     {
-//         theTip: "salt lake city",
-//     }
-// ]
+const tipCollection = [
+    {
+        theTip: "salt lake city",
+    }
+]
 
-// export const useTip = () => {
-//     return tipCollection.slice()
-// }
+export const useTip = () => {
+    return tipCollection.slice()
+}
