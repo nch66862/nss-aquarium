@@ -1,3 +1,4 @@
+// cold hard raw fish data. aka sushi.
 const fishCollection = [
     {
         name: "Bart",
@@ -65,6 +66,24 @@ const fishCollection = [
     },
 ]
 
-export const useFish = () => {
+//make a copy of the array as to not modify the original data set
+
+const useFish = () => {
     return fishCollection.slice()
+}
+
+//sort out the holy fish, soldier fish, and regular fish
+export const sortedFish = () => {
+
+    let holyFish = []
+    let soldierFish = []
+    let regularFish = []
+    
+    for (const singleFish of useFish) {
+        if (singleFish.length % 3 === 0) {
+            holyFish += singleFish
+        }
+    }
+
+    return holyFish
 }
