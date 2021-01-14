@@ -72,18 +72,29 @@ const useFish = () => {
     return fishCollection.slice()
 }
 
+const fishDataCopy = useFish ()
+
 //sort out the holy fish, soldier fish, and regular fish
 export const sortedFish = () => {
-
+debugger
     let holyFish = []
     let soldierFish = []
     let regularFish = []
+    let sortedOrder = []
     
-    for (const singleFish of useFish) {
+    for (const singleFish of fishDataCopy) {
         if (singleFish.length % 3 === 0) {
-            holyFish += singleFish
+            holyFish.push(singleFish)
+        }
+        else if (singleFish.length % 5 === 0) {
+            soldierFish.push(singleFish)
+        }
+        else {
+            regularFish.push(singleFish)
         }
     }
+// sort them back together in requested order
+    sortedOrder = sortedOrder.concat(holyFish, soldierFish, regularFish)
+    return sortedOrder
 
-    return holyFish
 }

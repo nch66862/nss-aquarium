@@ -1,11 +1,11 @@
-import { useFish } from './FishDataProvider.js'
+import { sortedFish } from './FishDataProvider.js'
 import { Fish } from "./Fish.js"
 
 export const FishList = () => {
-
+// debugger
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".containerLeft__fishCards")
-    const fishes = useFish()
+    const fishes = sortedFish()
 
     let fishHTMLRepresentations = ""
     for (const fish of fishes) {
